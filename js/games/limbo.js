@@ -29,7 +29,7 @@ window.PFGames.verifyLimbo = function (ctx) {
     '<div class="result-line"><span class="k">4 Bytes (Dec):</span><span>' + parts.b1 + ", " + parts.b2 + ", " + parts.b3 + ", " + parts.b4 + "</span></div>" +
     '<div class="result-line"><span class="k">Random Number (0–1) (R):</span><span>' + randomR.toFixed(12) + "</span></div>" +
     '<div class="result-line"><span class="k">Scaled Value:</span><span>floor(R × 16777216) = ' + randomInt + "</span></div>" +
-    '<div class="result-line"><span class="k">Final Result:</span><span>' + limboDisplay.toFixed(2) + "x</span></div>" +
+    '<div class="result-line"><span class="k">Final Result ((16777216 / (randomInt + 1)) × 0.98):</span><span>' + limboDisplay.toFixed(2) + "x</span></div>" +
     "</div>";
   el.diceNumber.textContent = "-";
   el.diceResult.textContent = "-";

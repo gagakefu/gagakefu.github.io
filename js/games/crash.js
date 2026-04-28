@@ -37,11 +37,11 @@ window.PFGames.verifyCrash = function (ctx) {
       '<div class="mine-hash-module hilo-cursor">' +
       '<div class="result-line"><span class="k">Round:</span><span>#' + (g + 1) + "</span></div>" +
       '<div class="result-line"><span class="k">Result Hash:</span><span>' + H.escapeHtml(hash) + "</span></div>" +
-      '<div class="result-line"><span class="k">4 Bytes (Hex):</span><span>' + H.escapeHtml(first13Hex) + "</span></div>" +
-      '<div class="result-line"><span class="k">4 Bytes (Dec):</span><span>' + first13Dec + "</span></div>" +
+      '<div class="result-line"><span class="k">First 13 Hex Chars (52 bits):</span><span>' + H.escapeHtml(first13Hex) + "</span></div>" +
+      '<div class="result-line"><span class="k">52-bit Integer (Dec):</span><span>' + first13Dec + "</span></div>" +
       '<div class="result-line"><span class="k">Random Number (0–1) (R):</span><span>' + H.escapeHtml(r.toFixed(16)) + "</span></div>" +
       '<div class="result-line"><span class="k">Scaled Value:</span><span>floor(' + numerator + "/(1-R)) = " + floored + "</span></div>" +
-      '<div class="result-line"><span class="k">Final Result:</span><span>' + multiplier + "</span></div>" +
+      '<div class="result-line"><span class="k">Final Result (Scaled Value / 100, keep 2 decimals):</span><span>' + multiplier + "</span></div>" +
       "</div>"
     );
 

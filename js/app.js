@@ -74,6 +74,7 @@
     if (p.has("serverSeedHash")) el.serverSeedHash.value = p.get("serverSeedHash") || "";
     if (p.has("clientSeed")) el.clientSeed.value = p.get("clientSeed") || "";
     if (p.has("nonce")) el.nonce.value = p.get("nonce") || "";
+    if (p.has("series")) el.flipCount.value = p.get("series") || "";
   }
 
   function setStatus(text, ok) {
